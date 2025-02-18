@@ -1,0 +1,165 @@
+<div class="profile_wrapper">
+  <img src="../../../assets/img/home/author-title-bg-img-new-1.jpg" alt="" />
+</div>
+
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <div class="profile_card">
+        <div class="author_img">
+          <img
+            src="../../../assets/img/home/agent1-profile-img-new-409x409.jpg"
+            alt=""
+          />
+        </div>
+        <div class="author_data mt-4">
+          <div class="author_address">
+            <div class="adrees_section">
+              <span> Address: </span>
+            </div>
+            <div class="address_data">
+              <span class="fw-bold fs-14"
+                >560 3rd Ave, New York, NY 10016, USA</span
+              >
+            </div>
+          </div>
+          <hr class="custom_hr" />
+          <div class="office_phone_outer">
+            <div class="office_phone_inner">
+              <span style="color: #555"> Office phone:</span>
+            </div>
+            <div class="office_number">
+              <span class="fw-bold" style="cursor: pointer"> +2224445557</span>
+            </div>
+          </div>
+          <hr class="custom_hr" />
+          <div class="mobile_phone_outer">
+            <div class="mobile_phone">
+              <span style="color: #555"> Mobile phone:</span>
+            </div>
+            <div class="mobile_number">
+              <span class="fw-bold"> +3336669991</span>
+            </div>
+          </div>
+          <hr class="custom_hr" />
+          <div class="what_app_outer">
+            <div class="what_app_inner">
+              <span style="color: #555"> Whatsapp, Viber phone:</span>
+            </div>
+            <div class="what_app_number">
+              <span class="fw-bold"> 3336669991</span>
+            </div>
+          </div>
+          <hr class="custom_hr" />
+          <div class="email_outer">
+            <div class="inner_email">
+              <span style="color: #555"> Email:</span>
+            </div>
+            <div class="email">
+              <span class="fw-bold"> steveparker </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contact_inner_title">
+          <h4>Feel free to write me</h4>
+          <p>
+            Save your time and easily rent or sell your property with the lowest
+            commission on the real estate
+          </p>
+        </div>
+        <div class="contact_form" [formGroup]="contactForm">
+          <input
+            type="text"
+            pInputText
+            class="w-100 mb-3"
+            placeholder="Your name *"
+            formControlName="name"
+          />
+
+          <input
+            type="text"
+            pInputText
+            class="w-100 mb-3"
+            placeholder="Your email *"
+            formControlName="email"
+          />
+
+          <textarea
+            class="mb-3"
+            rows="5"
+            cols="44"
+            pInputTextarea
+            placeholder="Description"
+            formControlName="desc"
+          ></textarea>
+
+          <p-button
+            label="Send a message"
+            class="custom_btn_send"
+            (onClick)="submit()"
+          ></p-button>
+
+          <div class="required">
+            <div
+              class="text-danger mt-2"
+              *ngIf="contactForm.invalid && contactForm.touched"
+            >
+              Please fill out all required fields.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="desc_author mt-5">
+        <h2>Steve Parker</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          doloremque recusandae asperiores culpa eveniet consectetur quas
+          tempora atque totam, ipsam neque. Repellendus dolores ratione nesciunt
+          assumenda aliquam quos, qui recusandae!
+        </p>
+        <p class="mt-4">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+          sapiente quod laborum hic assumenda omnis, ipsam nesciunt nobis quasi
+          optio dolorum? Voluptate illum consequuntur repellat sapiente tenetur
+          nesciunt, expedita totam.
+        </p>
+      </div>
+      <hr class="mt-5" />
+      <div class="autohr_skills mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill_section">
+              <h2>Skills</h2>
+              <ul>
+                <li>Research skilld</li>
+                <li>Proble-Sovling Skills</li>
+                <li>Ability to Negotiate</li>
+                <li>Sales experience</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="experience_section">
+              <h2>Experience</h2>
+              <ul>
+                <li>2023-New Home-Real Estate Agent</li>
+                <li>2022-Hendon-Real Estate Agent</li>
+                <li>2020-Eiddo-Reak Estate Agent</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-5" />
+      <div class="our_listing">
+        <app-card-shared [property]="property" [colInpt]="colInpt" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<p-toast></p-toast>

@@ -1,0 +1,104 @@
+.card {
+  border: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 10px !important;
+}
+.custom_card {
+  .p-card-footer {
+    border-top: 1px solid #000000;
+  }
+  position: relative;
+  .p-card {
+    padding: 10px !important;
+    position: relative;
+    box-shadow: none !important;
+  }
+  .p-card-header img {
+    border-radius: 10px !important;
+  }
+  .section_compare_favorit {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.41);
+    backdrop-filter: blur(8px) brightness(130%);
+    padding: 5px 25px;
+  }
+}
+
+.section_sell {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.41);
+  backdrop-filter: blur(8px) brightness(130%);
+  padding: 5px 20px;
+  h6 {
+    line-height: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 5px auto;
+  }
+}
+.type,
+.location {
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.2s ease-in-out;
+  color: #555;
+  font-weight: 500;
+  text-transform: uppercase;
+  &:hover {
+    color: #fb8053;
+  }
+}
+.title {
+  text-align: start;
+  font-size: 28px;
+  font-size: #000000;
+  cursor: pointer;
+}
+
+.price {
+  font-size: 22px;
+  color: #000000;
+  font-size: 700;
+}
+.all_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.area_section,
+.room_section,
+.bath_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 8px;
+}
+.room_count,
+.inner_area,
+.count_bath {
+  text-align: center;
+  margin-top: 11px;
+}
+.price_section {
+  margin-top: 10px;
+}
+
+.footer_card {
+  display: flex;
+  justify-content: space-between;
+}

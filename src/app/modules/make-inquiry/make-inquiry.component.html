@@ -1,0 +1,105 @@
+<div class="mt-5"></div>
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center justify-content-end">
+        <div class="inquiry_title">
+          <h2>
+            Discover a new <br />
+            way of living
+          </h2>
+          <p>
+            Feugait scriptorem qui ea, quo admodum eloquentiam eu. Te malis
+            tibique eum. Ne magna assum everti.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-end justify-content-center">
+        <div class="inquiry_form">
+          <div class="inner_form">
+            <div class="inner_form_title">
+              <h3>Make an enquiry</h3>
+            </div>
+            <div class="inner_form_desc">
+              <p>
+                Save your time and easily rent or sell your property with the
+                lowest commission on the real estate market.
+              </p>
+            </div>
+            <div class="inner_form_input" [formGroup]="inquiryForm">
+              <div class="input_row mb-3">
+                <input
+                  type="text"
+                  pInputText
+                  class="w-100"
+                  formControlName="name"
+                  placeholder="Your Name"
+                />
+                <div
+                  *ngIf="
+                    inquiryForm.get('name')?.touched &&
+                    inquiryForm.get('name')?.invalid
+                  "
+                  class="error"
+                >
+                  <small *ngIf="inquiryForm.get('name')?.errors?.['required']">
+                    Name is required.
+                  </small>
+                </div>
+              </div>
+
+              <div class="input_row mb-3">
+                <input
+                  type="email"
+                  pInputText
+                  class="w-100"
+                  formControlName="email"
+                  placeholder="Your Email"
+                />
+                <div
+                  *ngIf="
+                    inquiryForm.get('email')?.touched &&
+                    inquiryForm.get('email')?.invalid
+                  "
+                  class="error"
+                >
+                  <small *ngIf="inquiryForm.get('email')?.errors?.['required']">
+                    Email is required.
+                  </small>
+                  <small *ngIf="inquiryForm.get('email')?.errors?.['email']">
+                    Please enter a valid email address.
+                  </small>
+                </div>
+              </div>
+
+              <div class="input_row mb-3">
+                <input
+                  type="tel"
+                  pInputText
+                  class="w-100"
+                  formControlName="phone"
+                  placeholder="Your Phone Number"
+                />
+                <div
+                  *ngIf="
+                    inquiryForm.get('phone')?.touched &&
+                    inquiryForm.get('phone')?.invalid
+                  "
+                  class="error"
+                >
+                  <small *ngIf="inquiryForm.get('phone')?.errors?.['required']">
+                    Phone number is required.
+                  </small>
+                </div>
+              </div>
+
+              <div class="input_row_action">
+                <p-button label="Make an Enquiry" class="submit_btn" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

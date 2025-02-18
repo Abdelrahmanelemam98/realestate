@@ -1,0 +1,298 @@
+<p-dialog
+  [modal]="true"
+  [(visible)]="visible"
+  [style]="{ width: '60rem' }"
+  (onHide)="closeModal()"
+  [draggable]="false"
+  class="custom_login_modal"
+>
+  <ng-template pTemplate="header">
+    <h5>Advancedd filter</h5>
+  </ng-template>
+  <ng-template pTemplate="content">
+    <div class="property_search_section mb-4 mt-4">
+      <div class="row">
+        <div class="col-md-4">
+          <p-dropdown
+            [options]="cities"
+            optionLabel="name"
+            placeholder="Type"
+            class="w-100"
+            class="custom_drop_property"
+          />
+        </div>
+        <div class="col-md-4">
+          <p-dropdown
+            [options]="cities2"
+            optionLabel="name"
+            placeholder="Category"
+            class="w-100"
+            class="custom_drop_property"
+          />
+        </div>
+        <div class="col-md-4">
+          <p-dropdown
+            [options]="cities3"
+            optionLabel="name"
+            placeholder="Location"
+            class="w-100"
+            class="custom_drop_property"
+          />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div
+          class="col-md-3 d-flex justify-content-start aligns-items-center gap-3"
+        >
+          <div class="bedroom_section">
+            <label>Bedroom:</label>
+            <input type="text" pInputText class="custom_bedroom" />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="bath_room_section">
+            <label>Bathroom:</label>
+            <input type="text" pInputText class="custom_bathroom" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="slider_price">
+            <div class="slider_price_inner">
+              <div class="price_range">
+                <h6>Price range:</h6>
+              </div>
+              <div class="from_to_section">
+                <label>From</label>
+                <input
+                  type="text"
+                  pInputText
+                  [(ngModel)]="value"
+                  class="w-full mb-3"
+                  class="custom_value"
+                  readonly
+                />
+                <div class="max_range">To: 5345345$</div>
+              </div>
+            </div>
+            <p-slider
+              [(ngModel)]="value"
+              [min]="100"
+              [max]="100000000"
+              class="w-full custom_sidebar"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="min_area">
+            <input
+              type="text"
+              pInputText
+              placeholder="Min area "
+              class="w-100 custom_area"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="max_area">
+            <input
+              type="text"
+              pInputText
+              placeholder="Max area "
+              class="w-100 custom_area"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="action_search_advanced">
+            <p-button
+              label="Search Property"
+              icon="pi pi-search"
+              class="custom_btn"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="advanced_section mt-4">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start gap-3 flex-column">
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="Air Condition"
+                  name="pizza"
+                  value="Air Condition"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Disabled Access"
+                  name="pizza"
+                  value="
+                  Disabled Access"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Floor"
+                  name="pizza"
+                  value="
+                  Floor"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox label="Heating" name="pizza" value="Heating" />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="Renovation"
+                  name="pizza"
+                  value="Renovation"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Window Type"
+                  name="pizza"
+                  value="
+                  Window Type"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start gap-3 flex-column">
+              <div class="flex align-items-center">
+                <p-checkbox label="Cable TV" name="pizza" value="Cable TV" />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Elevator"
+                  name="pizza"
+                  value="
+                  Elevator"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Furnishing"
+                  name="pizza"
+                  value="
+                  Furnishing"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Intercom"
+                  name="pizza"
+                  value="
+                  Intercom"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox label="Security" name="pizza" value="Security" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start gap-3 flex-column">
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="Ceiling Height"
+                  name="pizza"
+                  value="Ceiling Height"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Fence"
+                  name="pizza"
+                  value="
+                  Fence"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Garage"
+                  name="pizza"
+                  value="
+                  Garage"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Parking"
+                  name="pizza"
+                  value="
+                  Parking"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="Swimming Pool"
+                  name="pizza"
+                  value="Swimming Pool"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start gap-3 flex-column">
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="Construction Year"
+                  name="pizza"
+                  value="Construction Year"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Fireplace"
+                  name="pizza"
+                  value="
+                  Fireplace"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  
+    Garden"
+                  name="pizza"
+                  value="
+                  
+    Garden"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox
+                  label="
+                  Pet Friendly"
+                  name="pizza"
+                  value="
+                  Pet Friendly"
+                />
+              </div>
+              <div class="flex align-items-center">
+                <p-checkbox label="WiFi" name="pizza" value="WiFi" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="footer"> </ng-template>
+</p-dialog>

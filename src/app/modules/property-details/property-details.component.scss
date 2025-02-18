@@ -1,0 +1,344 @@
+.proeprty_details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.sell {
+  text-transform: capitalize;
+  background-color: #f6f6f6;
+  backdrop-filter: blur(8px) brightness(130%);
+  padding: 2px 15px;
+  border-radius: 7px;
+}
+.property_name {
+  h2 {
+    font-size: 3rem;
+  }
+}
+.property_price {
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+}
+.property_details_outer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.proeprty_details_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.print,
+.share,
+.add,
+.wish {
+  background-color: #f6f6f6;
+  backdrop-filter: blur(8px) brightness(130%);
+  border-radius: 7px;
+  padding: 3px 18px;
+}
+
+:host ::ng-deep {
+  .speeddial-linear-demo {
+    .p-speeddial-direction-up {
+      left: calc(50% - 2rem);
+      bottom: 0;
+    }
+
+    .p-speeddial-direction-down {
+      left: calc(50% - 2rem);
+      top: 0;
+    }
+
+    .p-speeddial-direction-left {
+      right: 0;
+      top: calc(50% - 2rem);
+    }
+
+    .p-speeddial-direction-right {
+      left: 0;
+      top: calc(50% - 2rem);
+    }
+  }
+}
+
+.custom_speeddials {
+  .p-speeddial {
+    position: relative !important;
+  }
+  .p-speeddial-button.p-button.p-button-icon-only {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+  }
+  .p-speeddial-direction-down {
+    flex-direction: row !important;
+  }
+}
+.custom-speeddial-icon {
+  .p-button-icon {
+    font-size: 1.5rem !important;
+    color: white !important;
+  }
+}
+.custom-speeddial-icon {
+  .p-button-icon::before {
+    content: "\e920" !important; /* Unicode for 'pi-share-alt' */
+  }
+}
+
+.count_watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.desc_title,
+.video_section,
+.floor_plan_section {
+  h4 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+  }
+}
+.property_details,
+.property_utility,
+.out_door {
+  h6 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 40px 0;
+  }
+}
+.size_section,
+.bedroom_count_section,
+.bathroom_count_section,
+.floor_count_section,
+.additional_space_count_section,
+.furnishing_count_section,
+.ceiling_height_count_section,
+.construction_year_section,
+.ranovation_count_section,
+.heating_count_section,
+.air_conditon_count_section,
+.fire_place_count_section,
+.elevator_count_section,
+.ventiliation_count_section,
+.intercom_count_section,
+.window_type_count_section,
+.cable_count_section,
+.wifi_count_section,
+.garage_count_section,
+.disabled_access_section,
+.fence_section,
+.garden_count_section,
+.swimming_section,
+.security_section,
+.barbeque_section,
+.pet_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img_size,
+.bedroom_img,
+.bathroom_img,
+.floor_img,
+.additional_count,
+.furnishing_img,
+.ceiling_height_img,
+.construction_year_img,
+.ranovation_img,
+.heating_img,
+.air_condition_img,
+.fire_place_img,
+.elevator_img,
+.ventiliation_img,
+.intercom_img,
+.window_type_img,
+.cable_img,
+.wifi_img,
+.garage_img,
+.disabled_img,
+.fence_img,
+.garden_img,
+.swimming_img,
+.security_img,
+.barbeque_img,
+.pet_img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.show_btn {
+  .p-button {
+    background-color: #ffcc41 !important;
+    border: 1px solid #ffcc41 !important ;
+    padding: 10px 25px !important ;
+  }
+  .p-button .p-button-label {
+    color: #000 !important;
+    font-weight: 400 !important;
+  }
+}
+.address_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner_address {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+}
+.broker_section {
+  padding: 34px 23px;
+  border-radius: 7px;
+  background-color: #edf9f9;
+}
+.inner_broker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.broker_img {
+  img {
+    border-radius: 7px;
+  }
+}
+.broker_data {
+  .broker_company {
+    font-size: 13px;
+    line-height: 1rem;
+    font-weight: 400;
+    color: #555;
+    letter-spacing: normal;
+    text-transform: uppercase;
+  }
+  .border_name {
+    font-weight: 500;
+    color: #000;
+    font-size: 26px;
+    line-height: 1.1em;
+    word-wrap: break-word;
+  }
+  .broker_address {
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 15px;
+    color: #555;
+    font-weight: 400;
+    line-height: 1.1em;
+  }
+}
+.broker_additional_data {
+  margin-top: 31px;
+}
+.office_phone_outer,
+.mobile_phone_oute,
+.what_app_outer,
+.mobile_phone_outer,
+.email_outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 5px 0;
+}
+.custom_btn_view {
+  width: 100%;
+  .p-button {
+    width: 100%;
+    background-color: #ffcc41 !important;
+    color: #000 !important;
+    border: none !important;
+  }
+  .p-button .p-button-label {
+    font-weight: 500 !important;
+  }
+}
+.schedule_section {
+  padding: 34px 23px;
+  background-color: #fbfbfb;
+  border-radius: 7px;
+  margin-top: 30px;
+  border: 1px solid #d1d1d1;
+}
+.schedule_title {
+  h4 {
+    font-weight: 500;
+    color: #000;
+    font-size: 26px;
+    line-height: 1.9em;
+    word-wrap: break-word;
+  }
+}
+.schedule_desc {
+  p {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7em;
+    font-weight: 400;
+  }
+}
+.video_section {
+  video {
+    width: 100%;
+  }
+}
+.floor_img {
+  img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .property_name {
+    margin-top: 20px;
+  }
+  .address_section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .show_map {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .property_name {
+    margin-top: 20px;
+  }
+  .address_section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .show_map {
+    margin-top: 10px;
+  }
+}

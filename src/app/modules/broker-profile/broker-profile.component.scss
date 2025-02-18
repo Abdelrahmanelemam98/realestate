@@ -1,0 +1,118 @@
+.profile_wrapper {
+  background-image: url(../../../assets/img/home/author-title-bg-img-new-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.author_address,
+.office_phone_outer,
+.mobile_phone_outer,
+.what_app_outer,
+.email_outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile_card {
+  padding: 34px 23px;
+  background-color: #edf9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+.author_img {
+  img {
+    width: 100%;
+  }
+}
+.address_data {
+  span {
+    font-size: 14px;
+  }
+}
+.custom_hr {
+  border: 1px solid #e8e8e8;
+  margin-bottom: 0px;
+}
+
+.desc_author {
+  h2 {
+    font-size: 2.2rem;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.13em;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+  }
+  p {
+    color: #555;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+.skill_section,
+.experience_section {
+  h2 {
+    font-size: 23px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.7em;
+    margin: 25px 0;
+  }
+  ul {
+    li {
+      color: #555;
+      margin: 10px 0;
+    }
+  }
+}
+
+.contact {
+  margin-top: 30px;
+  padding: 34px 23px;
+  background-color: #fbfbfb;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+.custom_btn_send {
+  width: 100%;
+  .p-button {
+    width: 100%;
+    background-color: #ffcc41 !important;
+    color: #000 !important;
+    border: none !important;
+  }
+  .p-button .p-button-label {
+    font-weight: 500 !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .profile_wrapper {
+    img {
+      width: 100%;
+    }
+  }
+  .author_img {
+    img {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .profile_wrapper {
+    img {
+      width: 100%;
+    }
+  }
+  .author_img {
+    img {
+      width: 100%;
+    }
+  }
+}

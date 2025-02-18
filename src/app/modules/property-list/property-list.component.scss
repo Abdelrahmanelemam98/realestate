@@ -1,0 +1,144 @@
+.custom_drop_property {
+  .p-dropdown {
+    width: 100% !important;
+  }
+}
+.property_search_section {
+  padding: 2rem;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+.bedroom_section,
+.bath_room_section {
+  display: flex;
+  gap: 62px;
+  align-items: center;
+}
+.custom_bedroom,
+.custom_bathroom {
+  width: 15%;
+  padding: 6px;
+  border: 1px solid #d1d5db;
+}
+.from_to_section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.custom_value {
+  border: none;
+  width: 7%;
+  margin-right: 5px;
+  margin-left: 5px;
+  outline: none;
+}
+.slider_price_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom_area {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+}
+.action_search_advanced {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.custom_btn {
+  .p-button {
+    background-color: #ffcc41 !important;
+    border: none !important;
+    color: #000 !important;
+  }
+  .p-button-label {
+    font-weight: 400 !important;
+  }
+}
+
+.custom_sidebar {
+  .p-slider .p-slider-handle {
+    width: 15px !important;
+    height: 15px !important;
+    border: none !important;
+    background-color: #fb8053 !important;
+  }
+  .p-slider .p-slider-range {
+    background-color: #fb8053 !important;
+  }
+}
+.custom_pagination {
+  .p-paginator .p-paginator-first {
+    display: none !important;
+  }
+  .p-paginator .p-paginator-last {
+    display: none !important;
+  }
+  .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background: none !important;
+    border: none !important;
+    color: #fb8053 !important;
+  }
+}
+.advanced_section {
+  transition: 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .property_title {
+    margin-top: 30px;
+  }
+  .custom_drop_property {
+    .p-dropdown {
+      margin-bottom: 10px !important;
+    }
+  }
+  .bedroom_section,
+  .bath_room_section {
+    gap: 20px;
+  }
+  .custom_bedroom,
+  .custom_bathroom {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .custom_area {
+    margin-bottom: 10px;
+  }
+  .action_search_advanced {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .property_title {
+    margin-top: 30px;
+  }
+  .bedroom_section,
+  .bath_room_section {
+    gap: 20px;
+  }
+  .custom_drop_property {
+    .p-dropdown {
+      margin-bottom: 10px !important;
+    }
+  }
+  .custom_bedroom,
+  .custom_bathroom {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .custom_area {
+    margin-bottom: 10px;
+  }
+  .action_search_advanced {
+    margin-top: 10px;
+  }
+}

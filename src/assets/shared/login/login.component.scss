@@ -1,0 +1,46 @@
+.custom_login_modal {
+  .p-dialog .p-dialog-header {
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      color: #000;
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+}
+.remamber_me_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom_login {
+  .p-button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffcc41 !important;
+    color: #000 !important;
+    border: none !important;
+  }
+  .p-button .p-button-label {
+    font-weight: 400 !important;
+  }
+}
+.out_section_login {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  transition: 0.4s ease-in-out;
+  .pi {
+    &:hover {
+      color: #ff6900 !important;
+    }
+  }
+}

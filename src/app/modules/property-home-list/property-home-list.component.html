@@ -1,0 +1,25 @@
+<div class="d-block mt-5"></div>
+<div class="container">
+  <div class="property-card-list">
+    <div class="property_title">
+      <h2>
+        Our choice of <br />
+        popular real estate
+      </h2>
+    </div>
+
+    <app-card-shared
+      [property]="property"
+      [colInpt]="colInpt"
+    ></app-card-shared>
+    <div class="row">
+      <div class="see_more_section">
+        <p-button
+          label="Browse More Properties"
+          class="custom_btn_see_more"
+          [routerLink]="['/property-list']"
+        ></p-button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="page_content_hero">
+  <div class="overlay-content">
+    <div class="search_section">
+      <h1>Buy and rent properties <br />with no commission</h1>
+    </div>
+    <div class="box_search">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="input_row">
+            <p-dropdown
+              [options]="cities"
+              optionLabel="name"
+              placeholder="Category"
+              class="w-100 custom_dropdown"
+              appendTo="body"
+            />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="input_row">
+            <p-multiSelect
+              [options]="cities2"
+              optionLabel="name"
+              placeholder="Location"
+              class="w-100 custom_multi"
+              appendTo="body"
+            />
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-end">
+          <p-button
+            label="Advanced"
+            icon="pi pi-sliders-h"
+            class="custom_btn_Advanced"
+            (onClick)="showModalAdvanced()"
+          />
+        </div>
+        <div class="col-md-3">
+          <p-button
+            label="Seacrh property"
+            icon="pi pi-search"
+            class="custom_search"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-property-home-list></app-property-home-list>
+<app-model-space></app-model-space>
+<app-how-it-work></app-how-it-work>
+<app-make-inquiry></app-make-inquiry>
+<app-advanced-search-modal
+  [visible]="visible"
+  (close)="closeModal()"
+></app-advanced-search-modal>

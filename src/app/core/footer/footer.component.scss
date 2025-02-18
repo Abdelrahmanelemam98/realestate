@@ -1,0 +1,30 @@
+.outer_footer {
+  padding: 2rem;
+  background-color: #fafafa;
+
+  width: 100%;
+}
+.first_section_footer {
+  img {
+    width: 250px;
+    height: 80px;
+  }
+}
+.first_footer_desc {
+  p {
+    line-height: 1.9;
+  }
+}
+.contact_section {
+  h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+.follow_us_section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+}

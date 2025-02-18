@@ -1,0 +1,30 @@
+.vision_img_section {
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+}
+.vision_section_desc {
+  position: relative;
+  h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.9;
+  }
+}
+.custon_view_more_btn {
+  .p-button {
+    background-color: #ffbe30 !important;
+    border: none !important;
+    padding: 15px 25px !important;
+  }
+  .p-button-label {
+    color: #000000 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+}
